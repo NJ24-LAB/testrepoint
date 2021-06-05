@@ -17,6 +17,6 @@
         name: mydata
         image: newimage:01
         state: present
-        ports:
-          - 8080:8080
+        published_ports:
+          - 0.0.0.0:8080:8080
 
