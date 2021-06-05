@@ -4,7 +4,7 @@
   tasks:
     - name: Downloading docker
       yum:
-        name: docker-py
+        name: docker
         state: present
     
     - name: starting docker daemon
@@ -15,6 +15,6 @@
     - name: data container
       docker:
         name: mydata
-        image: testdeploy
+        image: newimage:01
         state: present
 
