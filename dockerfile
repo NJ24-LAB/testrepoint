@@ -1,3 +1,3 @@
 FROM tomcat
-COPY /var/lib/jenkins/workspace/testproject/*.war /usr/local/tomcat/webapps/
+COPY ./sample.war /usr/local/tomcat/webapps/
 
