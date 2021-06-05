@@ -15,6 +15,6 @@
     - name: data container
       docker:
         name: mydata
-        image: testdeploy
+        image: newimage:01
         state: present
 
