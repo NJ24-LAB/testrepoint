@@ -15,7 +15,7 @@
           state: started
           
     - name: data container
-      docker:
+      docker_container:
         name: mydata
         image: newimage:01
         state: started
