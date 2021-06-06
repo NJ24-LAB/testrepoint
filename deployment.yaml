@@ -28,5 +28,7 @@
         name: mydata
         image: nj2497/nj24dockerlab:01
         state: started
+        ports:
+         - "9090:8080"
 
 
