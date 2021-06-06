@@ -26,7 +26,7 @@
     - name: data container
       docker_container:
         name: mydata
-        image: newimage:01
+        image: nj2497/nj24dockerlab:01
         state: started
 
 
