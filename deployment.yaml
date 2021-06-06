@@ -18,6 +18,6 @@
       docker:
         name: mydata
         image: newimage:01
-        state: present
+        state: started
 
 
