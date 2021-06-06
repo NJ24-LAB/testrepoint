@@ -1,12 +1,21 @@
 - hosts: all
   remote_user: ec2-user
   become: yes
-  vars:
-    port: 9090
   tasks:
+  
+    - name: install python pip
+      yum:
+        name: python-pip
+        state: present
+  
     - name: Downloading docker
       yum:
         name: docker
+        state: present
+        
+    - name: install docker-py pip
+      pip:
+        name: docker-py
         state: present
         
     - name: starting docker daemon
